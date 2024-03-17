@@ -1,0 +1,3 @@
+[2024-01-06 18:48:10,230][train.py][line:264][INFO] Best_test: epoch:3	ma_f1: 75.13	acc: 80.48	avg_f1: 75.24	ma_all_f1: 80.11	mi_all_f1: 80.48	favor_f1: 72.9	against_f1: 77.36	none_f1: 90.07
+[2024-01-06 19:22:17,697][train.py][line:264][INFO] Best_test: epoch:2	ma_f1: 75.73	acc: 80.62	avg_f1: 75.86	ma_all_f1: 80.07	mi_all_f1: 80.62	favor_f1: 73.29	against_f1: 78.17	none_f1: 88.76
+[2024-01-06 20:02:38,579][train.py][line:264][INFO] Best_test: epoch:3	ma_f1: 74.87	acc: 79.86	avg_f1: 74.98	ma_all_f1: 79.28	mi_all_f1: 79.86	favor_f1: 72.43	against_f1: 77.32	none_f1: 88.08

@@ -1,0 +1,416 @@
+[2024-01-02 23:54:54,199][train.py][line:152][INFO] cuda memory allocated: 446163456
+[2024-01-02 23:54:54,203][train.py][line:167][INFO] > n_trainable_params: 111255555, n_nontrainable_params: 0
+[2024-01-02 23:54:54,203][train.py][line:168][INFO] > training arguments:
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> model_name: bert_fol_text
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> dataset: hc-
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> optimizer: <class 'transformers.optimization.AdamW'>
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> initializer: <function xavier_uniform_ at 0x7f7c6e06e550>
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> lr: 0.001
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> bert_lr: 5e-06
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> dropout: 0.2
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> num_epoch: 20
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> batch_size: 16
+[2024-01-02 23:54:54,203][train.py][line:170][INFO] >>> log_step: -1
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> pretrained_model_name: bert-base-uncased
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> max_seq_len: 60
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> polarities_dim: 3
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> patience: 5
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> device: cuda:0
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> save_model: False
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> seed: 0
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> valset_ratio: 0.0
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> embed_dim: 300
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> hidden_dim: 300
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> pid: 1
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> tid: 1
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> lid: 0
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> llambda: 0.5
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> use_prompt: True
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> with_text: False
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> model_class: <class 'models.bert_fol_text.BERT_FOL_T'>
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> dataset_file: {'train': ['/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/dt/dt.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/la/la.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/fm/fm.csv'], 'test': '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/hc/hc.csv'}
+[2024-01-02 23:54:54,204][train.py][line:170][INFO] >>> inputs_cols: ['bert_fol_inputs', 'bert_fol_type', 'bert_fol_mask', 'bert_text_inputs', 'bert_text_type', 'bert_text_mask', 'mlm_labels']
+[2024-01-02 23:54:54,209][train.py][line:206][INFO] epoch: 0
+[2024-01-02 23:55:10,168][train.py][line:244][INFO] 31/161	train_loss: 1.9561404082924128	train_acc: 43.95
+[2024-01-02 23:55:30,735][train.py][line:247][INFO] Val: ma_f1: 79.05	acc: 78.33	avg_f1: 79.82	ma_all_f1: 76.72	mi_all_f1: 78.33	favor_f1: 75.86	against_f1: 82.24	none_f1: 72.06
+[2024-01-02 23:55:51,388][train.py][line:254][INFO] Test: ma_f1: 79.05	acc: 78.33	avg_f1: 79.82	ma_all_f1: 76.72	mi_all_f1: 78.33	favor_f1: 75.86	against_f1: 82.24	none_f1: 72.06
+[2024-01-02 23:56:05,809][train.py][line:244][INFO] 63/161	train_loss: 1.4927344284951687	train_acc: 52.05
+[2024-01-02 23:56:26,368][train.py][line:247][INFO] Val: ma_f1: 78.59	acc: 77.82	avg_f1: 79.25	ma_all_f1: 76.64	mi_all_f1: 77.82	favor_f1: 75.73	against_f1: 81.45	none_f1: 72.73
+[2024-01-02 23:56:40,669][train.py][line:244][INFO] 95/161	train_loss: 1.3378004596258204	train_acc: 54.43
+[2024-01-02 23:57:01,172][train.py][line:247][INFO] Val: ma_f1: 38.89	acc: 68.97	avg_f1: 53.49	ma_all_f1: 49.75	mi_all_f1: 68.97	favor_f1: 1.23	against_f1: 76.55	none_f1: 71.46
+[2024-01-02 23:57:15,467][train.py][line:244][INFO] 127/161	train_loss: 1.2602371689863503	train_acc: 56.45
+[2024-01-02 23:57:35,939][train.py][line:247][INFO] Val: ma_f1: 77.56	acc: 71.72	avg_f1: 77.96	ma_all_f1: 65.5	mi_all_f1: 71.72	favor_f1: 76.06	against_f1: 79.06	none_f1: 41.36
+[2024-01-02 23:57:50,101][train.py][line:244][INFO] 159/161	train_loss: 1.19451727475971	train_acc: 58.09
+[2024-01-02 23:58:10,536][train.py][line:247][INFO] Val: ma_f1: 66.93	acc: 73.75	avg_f1: 70.75	ma_all_f1: 68.47	mi_all_f1: 73.75	favor_f1: 54.55	against_f1: 79.31	none_f1: 71.56
+[2024-01-02 23:58:10,951][train.py][line:206][INFO] epoch: 1
+[2024-01-02 23:58:25,260][train.py][line:244][INFO] 31/161	train_loss: 1.2368933698162436	train_acc: 58.2
+[2024-01-02 23:58:45,706][train.py][line:247][INFO] Val: ma_f1: 63.41	acc: 71.72	avg_f1: 68.38	ma_all_f1: 64.5	mi_all_f1: 71.72	favor_f1: 48.41	against_f1: 78.42	none_f1: 66.67
+[2024-01-02 23:59:00,059][train.py][line:244][INFO] 63/161	train_loss: 1.173642807174474	train_acc: 61.13
+[2024-01-02 23:59:20,514][train.py][line:247][INFO] Val: ma_f1: 78.13	acc: 77.92	avg_f1: 78.94	ma_all_f1: 76.52	mi_all_f1: 77.92	favor_f1: 74.73	against_f1: 81.54	none_f1: 73.29
+[2024-01-02 23:59:34,679][train.py][line:244][INFO] 95/161	train_loss: 1.1292408080771565	train_acc: 61.72
+[2024-01-02 23:59:55,266][train.py][line:247][INFO] Val: ma_f1: 38.83	acc: 68.87	avg_f1: 53.37	ma_all_f1: 49.71	mi_all_f1: 68.87	favor_f1: 1.23	against_f1: 76.43	none_f1: 71.48
+[2024-01-03 00:00:09,609][train.py][line:244][INFO] 127/161	train_loss: 1.1055658862460405	train_acc: 61.62
+[2024-01-03 00:00:30,246][train.py][line:247][INFO] Val: ma_f1: 79.07	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.23	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.08	none_f1: 73.55
+[2024-01-03 00:00:50,965][train.py][line:254][INFO] Test: ma_f1: 79.07	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.23	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.08	none_f1: 73.55
+[2024-01-03 00:01:05,260][train.py][line:244][INFO] 159/161	train_loss: 1.0692675990983844	train_acc: 62.58
+[2024-01-03 00:01:25,967][train.py][line:247][INFO] Val: ma_f1: 76.49	acc: 66.73	avg_f1: 76.61	ma_all_f1: 50.99	mi_all_f1: 66.73	favor_f1: 76.06	against_f1: 76.91	none_f1: 0.0
+[2024-01-03 00:01:26,397][train.py][line:206][INFO] epoch: 2
+[2024-01-03 00:01:40,727][train.py][line:244][INFO] 31/161	train_loss: 1.4066970311105251	train_acc: 55.08
+[2024-01-03 00:02:01,405][train.py][line:247][INFO] Val: ma_f1: 75.27	acc: 75.99	avg_f1: 76.15	ma_all_f1: 74.62	mi_all_f1: 75.99	favor_f1: 71.01	against_f1: 79.52	none_f1: 73.32
+[2024-01-03 00:02:15,747][train.py][line:244][INFO] 63/161	train_loss: 1.2348122955299914	train_acc: 60.25
+[2024-01-03 00:02:36,398][train.py][line:247][INFO] Val: ma_f1: 79.07	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.23	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.08	none_f1: 73.55
+[2024-01-03 00:02:50,696][train.py][line:244][INFO] 95/161	train_loss: 1.234459049378832	train_acc: 60.03
+[2024-01-03 00:03:11,301][train.py][line:247][INFO] Val: ma_f1: 66.28	acc: 60.83	avg_f1: 64.48	ma_all_f1: 63.51	mi_all_f1: 60.83	favor_f1: 75.94	against_f1: 56.62	none_f1: 57.99
+[2024-01-03 00:03:25,542][train.py][line:244][INFO] 127/161	train_loss: 1.221467615570873	train_acc: 60.06
+[2024-01-03 00:03:46,216][train.py][line:247][INFO] Val: ma_f1: 78.81	acc: 78.13	avg_f1: 79.45	ma_all_f1: 76.94	mi_all_f1: 78.13	favor_f1: 76.06	against_f1: 81.55	none_f1: 73.21
+[2024-01-03 00:04:00,491][train.py][line:244][INFO] 159/161	train_loss: 1.2589994953945278	train_acc: 60.08
+[2024-01-03 00:04:21,094][train.py][line:247][INFO] Val: ma_f1: 54.2	acc: 71.21	avg_f1: 62.31	ma_all_f1: 60.54	mi_all_f1: 71.21	favor_f1: 30.99	against_f1: 77.41	none_f1: 73.22
+[2024-01-03 00:04:21,520][train.py][line:206][INFO] epoch: 3
+[2024-01-03 00:04:35,642][train.py][line:244][INFO] 31/161	train_loss: 1.1438561575487256	train_acc: 59.77
+[2024-01-03 00:04:56,166][train.py][line:247][INFO] Val: ma_f1: 79.17	acc: 78.74	avg_f1: 79.9	ma_all_f1: 77.42	mi_all_f1: 78.74	favor_f1: 76.06	against_f1: 82.27	none_f1: 73.91
+[2024-01-03 00:05:16,884][train.py][line:254][INFO] Test: ma_f1: 79.17	acc: 78.74	avg_f1: 79.9	ma_all_f1: 77.42	mi_all_f1: 78.74	favor_f1: 76.06	against_f1: 82.27	none_f1: 73.91
+[2024-01-03 00:05:31,115][train.py][line:244][INFO] 63/161	train_loss: 1.0858980300836265	train_acc: 62.01
+[2024-01-03 00:05:51,740][train.py][line:247][INFO] Val: ma_f1: 27.05	acc: 39.88	avg_f1: 27.49	ma_all_f1: 37.6	mi_all_f1: 39.88	favor_f1: 49.6	against_f1: 4.5	none_f1: 58.72
+[2024-01-03 00:06:06,181][train.py][line:244][INFO] 95/161	train_loss: 1.1682850243523717	train_acc: 60.09
+[2024-01-03 00:06:26,847][train.py][line:247][INFO] Val: ma_f1: 36.5	acc: 57.48	avg_f1: 51.29	ma_all_f1: 24.33	mi_all_f1: 57.48	favor_f1: 0.0	against_f1: 73.0	none_f1: 0.0
+[2024-01-03 00:06:41,192][train.py][line:244][INFO] 127/161	train_loss: 1.1537959042470902	train_acc: 60.4
+[2024-01-03 00:07:01,760][train.py][line:247][INFO] Val: ma_f1: 61.45	acc: 65.21	avg_f1: 63.49	ma_all_f1: 62.49	mi_all_f1: 65.21	favor_f1: 54.35	against_f1: 68.55	none_f1: 64.56
+[2024-01-03 00:07:16,147][train.py][line:244][INFO] 159/161	train_loss: 1.115755862928927	train_acc: 61.13
+[2024-01-03 00:07:36,733][train.py][line:247][INFO] Val: ma_f1: 65.67	acc: 68.26	avg_f1: 66.19	ma_all_f1: 67.8	mi_all_f1: 68.26	favor_f1: 62.17	against_f1: 69.16	none_f1: 72.06
+[2024-01-03 00:07:37,148][train.py][line:206][INFO] epoch: 4
+[2024-01-03 00:07:51,403][train.py][line:244][INFO] 31/161	train_loss: 1.2496465276926756	train_acc: 60.35
+[2024-01-03 00:08:12,019][train.py][line:247][INFO] Val: ma_f1: 37.19	acc: 58.39	avg_f1: 51.69	ma_all_f1: 28.6	mi_all_f1: 58.39	favor_f1: 1.23	against_f1: 73.15	none_f1: 11.43
+[2024-01-03 00:08:26,360][train.py][line:244][INFO] 63/161	train_loss: 1.2707009785808623	train_acc: 59.77
+[2024-01-03 00:08:46,958][train.py][line:247][INFO] Val: ma_f1: 55.39	acc: 51.98	avg_f1: 53.75	ma_all_f1: 54.2	mi_all_f1: 51.98	favor_f1: 62.88	against_f1: 47.91	none_f1: 51.83
+[2024-01-03 00:09:01,214][train.py][line:244][INFO] 95/161	train_loss: 1.2905395984028776	train_acc: 60.22
+[2024-01-03 00:09:21,812][train.py][line:247][INFO] Val: ma_f1: 55.15	acc: 50.25	avg_f1: 52.09	ma_all_f1: 54.01	mi_all_f1: 50.25	favor_f1: 75.4	against_f1: 34.91	none_f1: 51.74
+[2024-01-03 00:09:36,185][train.py][line:244][INFO] 127/161	train_loss: 1.3840286692138761	train_acc: 58.74
+[2024-01-03 00:09:56,807][train.py][line:247][INFO] Val: ma_f1: 37.16	acc: 57.68	avg_f1: 51.7	ma_all_f1: 25.03	mi_all_f1: 57.68	favor_f1: 1.23	against_f1: 73.09	none_f1: 0.78
+[2024-01-03 00:10:11,085][train.py][line:244][INFO] 159/161	train_loss: 1.3961985452100634	train_acc: 59.34
+[2024-01-03 00:10:31,662][train.py][line:247][INFO] Val: ma_f1: 79.11	acc: 78.64	avg_f1: 79.82	ma_all_f1: 77.31	mi_all_f1: 78.64	favor_f1: 76.06	against_f1: 82.15	none_f1: 73.72
+[2024-01-03 00:10:32,079][train.py][line:206][INFO] epoch: 5
+[2024-01-03 00:10:46,399][train.py][line:244][INFO] 31/161	train_loss: 1.5487309210002422	train_acc: 58.98
+[2024-01-03 00:11:07,049][train.py][line:247][INFO] Val: ma_f1: 78.54	acc: 77.72	avg_f1: 79.11	ma_all_f1: 76.66	mi_all_f1: 77.72	favor_f1: 76.06	against_f1: 81.02	none_f1: 72.89
+[2024-01-03 00:11:21,313][train.py][line:244][INFO] 63/161	train_loss: 1.4087085500359535	train_acc: 60.84
+[2024-01-03 00:11:41,876][train.py][line:247][INFO] Val: ma_f1: 78.82	acc: 76.91	avg_f1: 79.5	ma_all_f1: 74.67	mi_all_f1: 76.91	favor_f1: 76.06	against_f1: 81.57	none_f1: 66.38
+[2024-01-03 00:11:56,064][train.py][line:244][INFO] 95/161	train_loss: 1.32937757174174	train_acc: 60.61
+[2024-01-03 00:12:16,582][train.py][line:247][INFO] Val: ma_f1: 38.39	acc: 57.78	avg_f1: 52.41	ma_all_f1: 25.59	mi_all_f1: 57.78	favor_f1: 3.64	against_f1: 73.14	none_f1: 0.0
+[2024-01-03 00:12:30,762][train.py][line:244][INFO] 127/161	train_loss: 1.348957491805777	train_acc: 60.74
+[2024-01-03 00:12:51,227][train.py][line:247][INFO] Val: ma_f1: 69.48	acc: 69.99	avg_f1: 72.2	ma_all_f1: 62.85	mi_all_f1: 69.99	favor_f1: 60.9	against_f1: 78.05	none_f1: 49.61
+[2024-01-03 00:13:05,454][train.py][line:244][INFO] 159/161	train_loss: 1.339912611618638	train_acc: 61.09
+[2024-01-03 00:13:25,947][train.py][line:247][INFO] Val: ma_f1: 72.45	acc: 70.7	avg_f1: 72.57	ma_all_f1: 70.52	mi_all_f1: 70.7	favor_f1: 71.98	against_f1: 72.93	none_f1: 66.67
+[2024-01-03 00:13:26,364][train.py][line:206][INFO] epoch: 6
+[2024-01-03 00:13:40,742][train.py][line:244][INFO] 31/161	train_loss: 1.2287918678484857	train_acc: 64.84
+[2024-01-03 00:14:01,309][train.py][line:247][INFO] Val: ma_f1: 56.75	acc: 68.97	avg_f1: 62.61	ma_all_f1: 61.2	mi_all_f1: 68.97	favor_f1: 39.29	against_f1: 74.21	none_f1: 70.1
+[2024-01-03 00:14:15,585][train.py][line:244][INFO] 63/161	train_loss: 1.441422505537048	train_acc: 61.91
+[2024-01-03 00:14:36,148][train.py][line:247][INFO] Val: ma_f1: 37.14	acc: 57.58	avg_f1: 51.67	ma_all_f1: 24.76	mi_all_f1: 57.58	favor_f1: 1.23	against_f1: 73.04	none_f1: 0.0
+[2024-01-03 00:14:50,455][train.py][line:244][INFO] 95/161	train_loss: 1.4033525863972802	train_acc: 62.76
+[2024-01-03 00:15:11,044][train.py][line:247][INFO] Val: ma_f1: 76.66	acc: 74.97	avg_f1: 77.8	ma_all_f1: 71.43	mi_all_f1: 74.97	favor_f1: 72.62	against_f1: 80.7	none_f1: 60.97
+[2024-01-03 00:15:25,305][train.py][line:244][INFO] 127/161	train_loss: 1.3000353624811396	train_acc: 64.16
+[2024-01-03 00:15:45,760][train.py][line:247][INFO] Val: ma_f1: 41.67	acc: 64.8	avg_f1: 54.74	ma_all_f1: 45.48	mi_all_f1: 64.8	favor_f1: 8.19	against_f1: 75.14	none_f1: 53.1
+[2024-01-03 00:15:59,937][train.py][line:244][INFO] 159/161	train_loss: 1.2793087330646813	train_acc: 63.59
+[2024-01-03 00:16:20,454][train.py][line:247][INFO] Val: ma_f1: 69.22	acc: 64.6	avg_f1: 67.89	ma_all_f1: 66.58	mi_all_f1: 64.6	favor_f1: 76.06	against_f1: 62.38	none_f1: 61.31
+[2024-01-03 00:16:20,876][train.py][line:206][INFO] epoch: 7
+[2024-01-03 00:16:35,077][train.py][line:244][INFO] 31/161	train_loss: 0.9217006880789995	train_acc: 65.82
+[2024-01-03 00:16:55,617][train.py][line:247][INFO] Val: ma_f1: 70.74	acc: 66.53	avg_f1: 69.74	ma_all_f1: 68.03	mi_all_f1: 66.53	favor_f1: 75.48	against_f1: 66.0	none_f1: 62.61
+[2024-01-03 00:17:09,818][train.py][line:244][INFO] 63/161	train_loss: 0.9549542900640517	train_acc: 66.11
+[2024-01-03 00:17:30,366][train.py][line:247][INFO] Val: ma_f1: 75.49	acc: 73.04	avg_f1: 75.45	ma_all_f1: 72.98	mi_all_f1: 73.04	favor_f1: 75.68	against_f1: 75.31	none_f1: 67.95
+[2024-01-03 00:17:44,687][train.py][line:244][INFO] 95/161	train_loss: 0.9547817838999132	train_acc: 64.65
+[2024-01-03 00:18:05,153][train.py][line:247][INFO] Val: ma_f1: 41.35	acc: 48.73	avg_f1: 41.35	ma_all_f1: 50.33	mi_all_f1: 48.73	favor_f1: 44.1	against_f1: 38.6	none_f1: 68.27
+[2024-01-03 00:18:19,424][train.py][line:244][INFO] 127/161	train_loss: 0.980296186520718	train_acc: 64.11
+[2024-01-03 00:18:39,914][train.py][line:247][INFO] Val: ma_f1: 76.57	acc: 74.77	avg_f1: 76.77	ma_all_f1: 74.33	mi_all_f1: 74.77	favor_f1: 75.66	against_f1: 77.47	none_f1: 69.85
+[2024-01-03 00:18:54,122][train.py][line:244][INFO] 159/161	train_loss: 1.011748162470758	train_acc: 63.91
+[2024-01-03 00:19:14,631][train.py][line:247][INFO] Val: ma_f1: 37.85	acc: 58.49	avg_f1: 52.12	ma_all_f1: 28.62	mi_all_f1: 58.49	favor_f1: 2.44	against_f1: 73.26	none_f1: 10.14
+[2024-01-03 00:19:15,057][train.py][line:206][INFO] epoch: 8
+[2024-01-03 00:19:29,308][train.py][line:244][INFO] 31/161	train_loss: 1.4951080232858658	train_acc: 62.7
+[2024-01-03 00:19:49,811][train.py][line:247][INFO] Val: ma_f1: 76.24	acc: 75.58	avg_f1: 76.74	ma_all_f1: 74.72	mi_all_f1: 75.58	favor_f1: 73.87	against_f1: 78.62	none_f1: 71.67
+[2024-01-03 00:20:04,113][train.py][line:244][INFO] 63/161	train_loss: 1.1866747881285846	train_acc: 65.33
+[2024-01-03 00:20:24,609][train.py][line:247][INFO] Val: ma_f1: 77.46	acc: 76.4	avg_f1: 77.91	ma_all_f1: 75.5	mi_all_f1: 76.4	favor_f1: 75.46	against_f1: 79.45	none_f1: 71.58
+[2024-01-03 00:20:38,875][train.py][line:244][INFO] 95/161	train_loss: 1.1129259373992682	train_acc: 66.21
+[2024-01-03 00:20:59,417][train.py][line:247][INFO] Val: ma_f1: 58.66	acc: 72.02	avg_f1: 65.28	ma_all_f1: 63.22	mi_all_f1: 72.02	favor_f1: 39.63	against_f1: 77.69	none_f1: 72.36
+[2024-01-03 00:21:13,613][train.py][line:244][INFO] 127/161	train_loss: 1.1817937300074846	train_acc: 64.4
+[2024-01-03 00:21:34,116][train.py][line:247][INFO] Val: ma_f1: 19.26	acc: 31.54	avg_f1: 16.78	ma_all_f1: 27.27	mi_all_f1: 31.54	favor_f1: 29.15	against_f1: 9.36	none_f1: 43.28
+[2024-01-03 00:21:48,359][train.py][line:244][INFO] 159/161	train_loss: 1.2312573848292232	train_acc: 64.1
+[2024-01-03 00:22:08,906][train.py][line:247][INFO] Val: ma_f1: 78.38	acc: 77.62	avg_f1: 78.99	ma_all_f1: 76.4	mi_all_f1: 77.62	favor_f1: 75.81	against_f1: 80.95	none_f1: 72.43
+[2024-01-03 00:22:09,318][train.py][line:263][INFO] Best_test: epoch:3	ma_f1: 79.17	acc: 78.74	avg_f1: 79.9	ma_all_f1: 77.42	mi_all_f1: 78.74	favor_f1: 76.06	against_f1: 82.27	none_f1: 73.91
+[2024-01-03 00:22:09,318][train.py][line:265][INFO] Best_val: epoch:3	ma_f1: 79.17	acc: 78.74	avg_f1: 79.9	ma_all_f1: 77.42	mi_all_f1: 78.74	favor_f1: 76.06	against_f1: 82.27	none_f1: 73.91
+[2024-01-03 00:23:08,638][train.py][line:152][INFO] cuda memory allocated: 446163456
+[2024-01-03 00:23:08,641][train.py][line:167][INFO] > n_trainable_params: 111255555, n_nontrainable_params: 0
+[2024-01-03 00:23:08,641][train.py][line:168][INFO] > training arguments:
+[2024-01-03 00:23:08,641][train.py][line:170][INFO] >>> model_name: bert_fol_text
+[2024-01-03 00:23:08,641][train.py][line:170][INFO] >>> dataset: hc-
+[2024-01-03 00:23:08,641][train.py][line:170][INFO] >>> optimizer: <class 'transformers.optimization.AdamW'>
+[2024-01-03 00:23:08,641][train.py][line:170][INFO] >>> initializer: <function xavier_uniform_ at 0x7fc1215a0550>
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> lr: 0.001
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> bert_lr: 5e-06
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> dropout: 0.2
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> num_epoch: 20
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> batch_size: 16
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> log_step: -1
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> pretrained_model_name: bert-base-uncased
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> max_seq_len: 60
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> polarities_dim: 3
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> patience: 5
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> device: cuda:0
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> save_model: False
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> seed: 1
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> valset_ratio: 0.0
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> embed_dim: 300
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> hidden_dim: 300
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> pid: 1
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> tid: 1
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> lid: 0
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> llambda: 0.5
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> use_prompt: True
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> with_text: False
+[2024-01-03 00:23:08,642][train.py][line:170][INFO] >>> model_class: <class 'models.bert_fol_text.BERT_FOL_T'>
+[2024-01-03 00:23:08,643][train.py][line:170][INFO] >>> dataset_file: {'train': ['/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/dt/dt.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/la/la.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/fm/fm.csv'], 'test': '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/hc/hc.csv'}
+[2024-01-03 00:23:08,643][train.py][line:170][INFO] >>> inputs_cols: ['bert_fol_inputs', 'bert_fol_type', 'bert_fol_mask', 'bert_text_inputs', 'bert_text_type', 'bert_text_mask', 'mlm_labels']
+[2024-01-03 00:23:08,647][train.py][line:206][INFO] epoch: 0
+[2024-01-03 00:23:24,876][train.py][line:244][INFO] 31/161	train_loss: 2.4355850499123335	train_acc: 40.04
+[2024-01-03 00:23:46,504][train.py][line:247][INFO] Val: ma_f1: 36.5	acc: 57.48	avg_f1: 51.29	ma_all_f1: 24.33	mi_all_f1: 57.48	favor_f1: 0.0	against_f1: 73.0	none_f1: 0.0
+[2024-01-03 00:24:08,230][train.py][line:254][INFO] Test: ma_f1: 36.5	acc: 57.48	avg_f1: 51.29	ma_all_f1: 24.33	mi_all_f1: 57.48	favor_f1: 0.0	against_f1: 73.0	none_f1: 0.0
+[2024-01-03 00:24:23,351][train.py][line:244][INFO] 63/161	train_loss: 1.7973094787448645	train_acc: 47.85
+[2024-01-03 00:24:44,934][train.py][line:247][INFO] Val: ma_f1: 44.44	acc: 67.75	avg_f1: 56.7	ma_all_f1: 50.87	mi_all_f1: 67.75	favor_f1: 12.5	against_f1: 76.38	none_f1: 63.72
+[2024-01-03 00:25:06,606][train.py][line:254][INFO] Test: ma_f1: 44.44	acc: 67.75	avg_f1: 56.7	ma_all_f1: 50.87	mi_all_f1: 67.75	favor_f1: 12.5	against_f1: 76.38	none_f1: 63.72
+[2024-01-03 00:25:21,716][train.py][line:244][INFO] 95/161	train_loss: 1.5396303137143452	train_acc: 52.54
+[2024-01-03 00:25:43,219][train.py][line:247][INFO] Val: ma_f1: 76.69	acc: 75.89	avg_f1: 77.28	ma_all_f1: 74.82	mi_all_f1: 75.89	favor_f1: 73.98	against_f1: 79.4	none_f1: 71.08
+[2024-01-03 00:26:04,804][train.py][line:254][INFO] Test: ma_f1: 76.69	acc: 75.89	avg_f1: 77.28	ma_all_f1: 74.82	mi_all_f1: 75.89	favor_f1: 73.98	against_f1: 79.4	none_f1: 71.08
+[2024-01-03 00:26:19,812][train.py][line:244][INFO] 127/161	train_loss: 1.427912513492629	train_acc: 54.83
+[2024-01-03 00:26:41,310][train.py][line:247][INFO] Val: ma_f1: 78.45	acc: 77.31	avg_f1: 78.99	ma_all_f1: 76.29	mi_all_f1: 77.31	favor_f1: 76.06	against_f1: 80.83	none_f1: 71.97
+[2024-01-03 00:27:02,908][train.py][line:254][INFO] Test: ma_f1: 78.45	acc: 77.31	avg_f1: 78.99	ma_all_f1: 76.29	mi_all_f1: 77.31	favor_f1: 76.06	against_f1: 80.83	none_f1: 71.97
+[2024-01-03 00:27:17,945][train.py][line:244][INFO] 159/161	train_loss: 1.3329548362642527	train_acc: 56.13
+[2024-01-03 00:27:39,448][train.py][line:247][INFO] Val: ma_f1: 79.08	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.25	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.09	none_f1: 73.61
+[2024-01-03 00:28:00,985][train.py][line:254][INFO] Test: ma_f1: 79.08	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.25	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.09	none_f1: 73.61
+[2024-01-03 00:28:01,418][train.py][line:206][INFO] epoch: 1
+[2024-01-03 00:28:16,357][train.py][line:244][INFO] 31/161	train_loss: 1.4004929848015308	train_acc: 53.12
+[2024-01-03 00:28:37,840][train.py][line:247][INFO] Val: ma_f1: 76.49	acc: 66.73	avg_f1: 76.61	ma_all_f1: 50.99	mi_all_f1: 66.73	favor_f1: 76.06	against_f1: 76.91	none_f1: 0.0
+[2024-01-03 00:28:52,953][train.py][line:244][INFO] 63/161	train_loss: 1.3600017079152167	train_acc: 56.25
+[2024-01-03 00:29:14,441][train.py][line:247][INFO] Val: ma_f1: 79.06	acc: 78.54	avg_f1: 79.8	ma_all_f1: 77.16	mi_all_f1: 78.54	favor_f1: 75.94	against_f1: 82.18	none_f1: 73.36
+[2024-01-03 00:29:29,405][train.py][line:244][INFO] 95/161	train_loss: 1.2620998580629628	train_acc: 58.27
+[2024-01-03 00:29:50,847][train.py][line:247][INFO] Val: ma_f1: 36.5	acc: 57.48	avg_f1: 51.29	ma_all_f1: 24.33	mi_all_f1: 57.48	favor_f1: 0.0	against_f1: 73.0	none_f1: 0.0
+[2024-01-03 00:30:05,754][train.py][line:244][INFO] 127/161	train_loss: 1.233554538572207	train_acc: 59.52
+[2024-01-03 00:30:27,228][train.py][line:247][INFO] Val: ma_f1: 76.29	acc: 73.75	avg_f1: 76.34	ma_all_f1: 73.51	mi_all_f1: 73.75	favor_f1: 76.06	against_f1: 76.51	none_f1: 67.97
+[2024-01-03 00:30:42,238][train.py][line:244][INFO] 159/161	train_loss: 1.209744834713638	train_acc: 60.23
+[2024-01-03 00:31:03,682][train.py][line:247][INFO] Val: ma_f1: 77.04	acc: 75.89	avg_f1: 77.9	ma_all_f1: 73.68	mi_all_f1: 75.89	favor_f1: 73.32	against_f1: 80.77	none_f1: 66.95
+[2024-01-03 00:31:04,113][train.py][line:206][INFO] epoch: 2
+[2024-01-03 00:31:19,029][train.py][line:244][INFO] 31/161	train_loss: 1.1508470680564642	train_acc: 62.11
+[2024-01-03 00:31:40,542][train.py][line:247][INFO] Val: ma_f1: 76.49	acc: 66.73	avg_f1: 76.61	ma_all_f1: 50.99	mi_all_f1: 66.73	favor_f1: 76.06	against_f1: 76.91	none_f1: 0.0
+[2024-01-03 00:31:55,529][train.py][line:244][INFO] 63/161	train_loss: 1.2953488416969776	train_acc: 60.16
+[2024-01-03 00:32:16,988][train.py][line:247][INFO] Val: ma_f1: 78.99	acc: 78.33	avg_f1: 79.68	ma_all_f1: 77.03	mi_all_f1: 78.33	favor_f1: 76.06	against_f1: 81.92	none_f1: 73.09
+[2024-01-03 00:32:31,945][train.py][line:244][INFO] 95/161	train_loss: 1.2108008889481425	train_acc: 62.04
+[2024-01-03 00:32:53,362][train.py][line:247][INFO] Val: ma_f1: 76.49	acc: 66.73	avg_f1: 76.61	ma_all_f1: 50.99	mi_all_f1: 66.73	favor_f1: 76.06	against_f1: 76.91	none_f1: 0.0
+[2024-01-03 00:33:08,432][train.py][line:244][INFO] 127/161	train_loss: 1.3442937557119876	train_acc: 60.35
+[2024-01-03 00:33:29,871][train.py][line:247][INFO] Val: ma_f1: 61.79	acc: 56.56	avg_f1: 63.41	ma_all_f1: 41.2	mi_all_f1: 56.56	favor_f1: 43.47	against_f1: 80.12	none_f1: 0.0
+[2024-01-03 00:33:44,829][train.py][line:244][INFO] 159/161	train_loss: 1.3435119966045022	train_acc: 61.17
+[2024-01-03 00:34:06,319][train.py][line:247][INFO] Val: ma_f1: 38.92	acc: 69.48	avg_f1: 53.45	ma_all_f1: 50.42	mi_all_f1: 69.48	favor_f1: 1.23	against_f1: 76.61	none_f1: 73.43
+[2024-01-03 00:34:06,765][train.py][line:206][INFO] epoch: 3
+[2024-01-03 00:34:21,564][train.py][line:244][INFO] 31/161	train_loss: 1.3068955815397203	train_acc: 58.01
+[2024-01-03 00:34:43,069][train.py][line:247][INFO] Val: ma_f1: 48.95	acc: 45.78	avg_f1: 45.56	ma_all_f1: 49.21	mi_all_f1: 45.78	favor_f1: 75.07	against_f1: 22.84	none_f1: 49.73
+[2024-01-03 00:34:58,112][train.py][line:244][INFO] 63/161	train_loss: 1.2318570495117456	train_acc: 59.77
+[2024-01-03 00:35:19,610][train.py][line:247][INFO] Val: ma_f1: 77.97	acc: 76.81	avg_f1: 78.78	ma_all_f1: 74.71	mi_all_f1: 76.81	favor_f1: 74.55	against_f1: 81.39	none_f1: 68.19
+[2024-01-03 00:35:34,569][train.py][line:244][INFO] 95/161	train_loss: 1.1774564914715786	train_acc: 60.61
+[2024-01-03 00:35:56,008][train.py][line:247][INFO] Val: ma_f1: 71.04	acc: 68.77	avg_f1: 71.46	ma_all_f1: 68.35	mi_all_f1: 68.77	favor_f1: 69.21	against_f1: 72.86	none_f1: 62.99
+[2024-01-03 00:36:10,936][train.py][line:244][INFO] 127/161	train_loss: 1.1206510668853298	train_acc: 61.96
+[2024-01-03 00:36:32,488][train.py][line:247][INFO] Val: ma_f1: 61.73	acc: 73.35	avg_f1: 67.52	ma_all_f1: 65.64	mi_all_f1: 73.35	favor_f1: 44.44	against_f1: 79.02	none_f1: 73.45
+[2024-01-03 00:36:47,436][train.py][line:244][INFO] 159/161	train_loss: 1.1269383531995119	train_acc: 61.21
+[2024-01-03 00:37:08,882][train.py][line:247][INFO] Val: ma_f1: 61.35	acc: 73.04	avg_f1: 67.45	ma_all_f1: 64.76	mi_all_f1: 73.04	favor_f1: 43.48	against_f1: 79.21	none_f1: 71.6
+[2024-01-03 00:37:09,311][train.py][line:206][INFO] epoch: 4
+[2024-01-03 00:37:24,370][train.py][line:244][INFO] 31/161	train_loss: 1.0732605680823326	train_acc: 64.45
+[2024-01-03 00:37:45,852][train.py][line:247][INFO] Val: ma_f1: 74.77	acc: 72.43	avg_f1: 74.67	ma_all_f1: 72.49	mi_all_f1: 72.43	favor_f1: 75.26	against_f1: 74.29	none_f1: 67.93
+[2024-01-03 00:38:00,851][train.py][line:244][INFO] 63/161	train_loss: 1.259927762672305	train_acc: 62.11
+[2024-01-03 00:38:22,327][train.py][line:247][INFO] Val: ma_f1: 76.49	acc: 66.73	avg_f1: 76.61	ma_all_f1: 50.99	mi_all_f1: 66.73	favor_f1: 76.06	against_f1: 76.91	none_f1: 0.0
+[2024-01-03 00:38:37,345][train.py][line:244][INFO] 95/161	train_loss: 1.2785698242175083	train_acc: 62.04
+[2024-01-03 00:38:58,813][train.py][line:247][INFO] Val: ma_f1: 38.62	acc: 67.04	avg_f1: 53.29	ma_all_f1: 47.09	mi_all_f1: 67.04	favor_f1: 1.23	against_f1: 76.02	none_f1: 64.04
+[2024-01-03 00:39:13,832][train.py][line:244][INFO] 127/161	train_loss: 1.337882612249814	train_acc: 61.08
+[2024-01-03 00:39:35,303][train.py][line:247][INFO] Val: ma_f1: 74.91	acc: 65.92	avg_f1: 75.26	ma_all_f1: 50.71	mi_all_f1: 65.92	favor_f1: 73.6	against_f1: 76.22	none_f1: 2.31
+[2024-01-03 00:39:50,398][train.py][line:244][INFO] 159/161	train_loss: 1.476460328977555	train_acc: 60.23
+[2024-01-03 00:40:11,946][train.py][line:247][INFO] Val: ma_f1: 37.39	acc: 61.14	avg_f1: 50.39	ma_all_f1: 44.22	mi_all_f1: 61.14	favor_f1: 1.23	against_f1: 73.55	none_f1: 57.89
+[2024-01-03 00:40:12,395][train.py][line:206][INFO] epoch: 5
+[2024-01-03 00:40:27,288][train.py][line:244][INFO] 31/161	train_loss: 1.0331793744117022	train_acc: 69.14
+[2024-01-03 00:40:48,720][train.py][line:247][INFO] Val: ma_f1: 47.03	acc: 67.96	avg_f1: 58.18	ma_all_f1: 52.51	mi_all_f1: 67.96	favor_f1: 17.68	against_f1: 76.38	none_f1: 63.48
+[2024-01-03 00:41:03,744][train.py][line:244][INFO] 63/161	train_loss: 1.0477916728705168	train_acc: 66.6
+[2024-01-03 00:41:25,231][train.py][line:247][INFO] Val: ma_f1: 75.51	acc: 73.14	avg_f1: 75.54	ma_all_f1: 73.02	mi_all_f1: 73.14	favor_f1: 75.34	against_f1: 75.68	none_f1: 68.03
+[2024-01-03 00:41:40,230][train.py][line:244][INFO] 95/161	train_loss: 1.0384269698212545	train_acc: 65.69
+[2024-01-03 00:42:01,745][train.py][line:247][INFO] Val: ma_f1: 78.85	acc: 78.23	avg_f1: 79.5	ma_all_f1: 77.05	mi_all_f1: 78.23	favor_f1: 76.06	against_f1: 81.63	none_f1: 73.44
+[2024-01-03 00:42:16,678][train.py][line:244][INFO] 127/161	train_loss: 1.0143446398433298	train_acc: 65.04
+[2024-01-03 00:42:38,137][train.py][line:247][INFO] Val: ma_f1: 78.01	acc: 77.92	avg_f1: 78.82	ma_all_f1: 76.54	mi_all_f1: 77.92	favor_f1: 74.42	against_f1: 81.6	none_f1: 73.61
+[2024-01-03 00:42:53,083][train.py][line:244][INFO] 159/161	train_loss: 1.0665102928876877	train_acc: 64.06
+[2024-01-03 00:43:14,568][train.py][line:247][INFO] Val: ma_f1: 74.15	acc: 75.38	avg_f1: 75.11	ma_all_f1: 73.95	mi_all_f1: 75.38	favor_f1: 69.3	against_f1: 78.99	none_f1: 73.57
+[2024-01-03 00:43:15,015][train.py][line:263][INFO] Best_test: epoch:0	ma_f1: 79.08	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.25	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.09	none_f1: 73.61
+[2024-01-03 00:43:15,016][train.py][line:265][INFO] Best_val: epoch:0	ma_f1: 79.08	acc: 78.54	avg_f1: 79.78	ma_all_f1: 77.25	mi_all_f1: 78.54	favor_f1: 76.06	against_f1: 82.09	none_f1: 73.61
+[2024-01-03 00:44:13,938][train.py][line:152][INFO] cuda memory allocated: 446163456
+[2024-01-03 00:44:13,942][train.py][line:167][INFO] > n_trainable_params: 111255555, n_nontrainable_params: 0
+[2024-01-03 00:44:13,942][train.py][line:168][INFO] > training arguments:
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> model_name: bert_fol_text
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> dataset: hc-
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> optimizer: <class 'transformers.optimization.AdamW'>
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> initializer: <function xavier_uniform_ at 0x7f6f412d5550>
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> lr: 0.001
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> bert_lr: 5e-06
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> dropout: 0.2
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> num_epoch: 20
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> batch_size: 16
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> log_step: -1
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> pretrained_model_name: bert-base-uncased
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> max_seq_len: 60
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> polarities_dim: 3
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> patience: 5
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> device: cuda:0
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> save_model: False
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> seed: 2
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> valset_ratio: 0.0
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> embed_dim: 300
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> hidden_dim: 300
+[2024-01-03 00:44:13,942][train.py][line:170][INFO] >>> pid: 1
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> tid: 1
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> lid: 0
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> llambda: 0.5
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> use_prompt: True
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> with_text: False
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> model_class: <class 'models.bert_fol_text.BERT_FOL_T'>
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> dataset_file: {'train': ['/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/dt/dt.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/la/la.csv', '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/fm/fm.csv'], 'test': '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/hc/hc.csv'}
+[2024-01-03 00:44:13,943][train.py][line:170][INFO] >>> inputs_cols: ['bert_fol_inputs', 'bert_fol_type', 'bert_fol_mask', 'bert_text_inputs', 'bert_text_type', 'bert_text_mask', 'mlm_labels']
+[2024-01-03 00:44:13,947][train.py][line:206][INFO] epoch: 0
+[2024-01-03 00:44:30,633][train.py][line:244][INFO] 31/161	train_loss: 3.0440334491431713	train_acc: 37.89
+[2024-01-03 00:44:52,167][train.py][line:247][INFO] Val: ma_f1: 25.61	acc: 23.3	avg_f1: 26.2	ma_all_f1: 17.08	mi_all_f1: 23.3	favor_f1: 30.22	against_f1: 21.0	none_f1: 0.0
+[2024-01-03 00:45:13,812][train.py][line:254][INFO] Test: ma_f1: 25.61	acc: 23.3	avg_f1: 26.2	ma_all_f1: 17.08	mi_all_f1: 23.3	favor_f1: 30.22	against_f1: 21.0	none_f1: 0.0
+[2024-01-03 00:45:28,805][train.py][line:244][INFO] 63/161	train_loss: 2.12413692753762	train_acc: 44.34
+[2024-01-03 00:45:50,262][train.py][line:247][INFO] Val: ma_f1: 38.79	acc: 68.87	avg_f1: 53.31	ma_all_f1: 49.76	mi_all_f1: 68.87	favor_f1: 1.23	against_f1: 76.36	none_f1: 71.7
+[2024-01-03 00:46:11,844][train.py][line:254][INFO] Test: ma_f1: 38.79	acc: 68.87	avg_f1: 53.31	ma_all_f1: 49.76	mi_all_f1: 68.87	favor_f1: 1.23	against_f1: 76.36	none_f1: 71.7
+[2024-01-03 00:46:26,802][train.py][line:244][INFO] 95/161	train_loss: 1.7700836040700476	train_acc: 48.57
+[2024-01-03 00:46:48,330][train.py][line:247][INFO] Val: ma_f1: 74.77	acc: 73.55	avg_f1: 76.22	ma_all_f1: 69.24	mi_all_f1: 73.55	favor_f1: 69.64	against_f1: 79.9	none_f1: 58.17
+[2024-01-03 00:47:09,947][train.py][line:254][INFO] Test: ma_f1: 74.77	acc: 73.55	avg_f1: 76.22	ma_all_f1: 69.24	mi_all_f1: 73.55	favor_f1: 69.64	against_f1: 79.9	none_f1: 58.17
+[2024-01-03 00:47:24,820][train.py][line:244][INFO] 127/161	train_loss: 1.5739415602292866	train_acc: 52.05
+[2024-01-03 00:47:46,259][train.py][line:247][INFO] Val: ma_f1: 41.79	acc: 69.18	avg_f1: 55.04	ma_all_f1: 51.71	mi_all_f1: 69.18	favor_f1: 7.1	against_f1: 76.48	none_f1: 71.54
+[2024-01-03 00:48:01,128][train.py][line:244][INFO] 159/161	train_loss: 1.486870982311666	train_acc: 53.36
+[2024-01-03 00:48:22,562][train.py][line:247][INFO] Val: ma_f1: 77.06	acc: 77.21	avg_f1: 77.91	ma_all_f1: 75.78	mi_all_f1: 77.21	favor_f1: 73.13	against_f1: 80.99	none_f1: 73.22
+[2024-01-03 00:48:44,134][train.py][line:254][INFO] Test: ma_f1: 77.06	acc: 77.21	avg_f1: 77.91	ma_all_f1: 75.78	mi_all_f1: 77.21	favor_f1: 73.13	against_f1: 80.99	none_f1: 73.22
+[2024-01-03 00:48:44,570][train.py][line:206][INFO] epoch: 1
+[2024-01-03 00:48:59,447][train.py][line:244][INFO] 31/161	train_loss: 1.0974315395578742	train_acc: 61.13
+[2024-01-03 00:49:20,905][train.py][line:247][INFO] Val: ma_f1: 78.99	acc: 78.23	avg_f1: 79.68	ma_all_f1: 76.88	mi_all_f1: 78.23	favor_f1: 76.06	against_f1: 81.91	none_f1: 72.66
+[2024-01-03 00:49:42,476][train.py][line:254][INFO] Test: ma_f1: 78.99	acc: 78.23	avg_f1: 79.68	ma_all_f1: 76.88	mi_all_f1: 78.23	favor_f1: 76.06	against_f1: 81.91	none_f1: 72.66
+[2024-01-03 00:49:57,370][train.py][line:244][INFO] 63/161	train_loss: 1.0143688120879233	train_acc: 61.33
+[2024-01-03 00:50:18,814][train.py][line:247][INFO] Val: ma_f1: 76.78	acc: 74.87	avg_f1: 77.02	ma_all_f1: 74.39	mi_all_f1: 74.87	favor_f1: 75.73	against_f1: 77.83	none_f1: 69.61
+[2024-01-03 00:50:33,722][train.py][line:244][INFO] 95/161	train_loss: 1.0877061231682699	train_acc: 61.0
+[2024-01-03 00:50:55,213][train.py][line:247][INFO] Val: ma_f1: 38.12	acc: 69.07	avg_f1: 52.82	ma_all_f1: 49.78	mi_all_f1: 69.07	favor_f1: 0.0	against_f1: 76.24	none_f1: 73.09
+[2024-01-03 00:51:10,083][train.py][line:244][INFO] 127/161	train_loss: 1.0880473863799125	train_acc: 60.69
+[2024-01-03 00:51:31,566][train.py][line:247][INFO] Val: ma_f1: 38.81	acc: 69.28	avg_f1: 53.28	ma_all_f1: 50.28	mi_all_f1: 69.28	favor_f1: 1.23	against_f1: 76.4	none_f1: 73.22
+[2024-01-03 00:51:46,492][train.py][line:244][INFO] 159/161	train_loss: 1.1160226359963417	train_acc: 60.27
+[2024-01-03 00:52:07,955][train.py][line:247][INFO] Val: ma_f1: 57.91	acc: 53.51	avg_f1: 55.49	ma_all_f1: 56.64	mi_all_f1: 53.51	favor_f1: 74.11	against_f1: 41.7	none_f1: 54.09
+[2024-01-03 00:52:08,387][train.py][line:206][INFO] epoch: 2
+[2024-01-03 00:52:23,174][train.py][line:244][INFO] 31/161	train_loss: 1.0860829912126064	train_acc: 60.55
+[2024-01-03 00:52:44,654][train.py][line:247][INFO] Val: ma_f1: 57.18	acc: 52.19	avg_f1: 58.15	ma_all_f1: 40.86	mi_all_f1: 52.19	favor_f1: 40.96	against_f1: 73.4	none_f1: 8.21
+[2024-01-03 00:52:59,586][train.py][line:244][INFO] 63/161	train_loss: 1.131172571098432	train_acc: 60.94
+[2024-01-03 00:53:21,002][train.py][line:247][INFO] Val: ma_f1: 78.62	acc: 78.33	avg_f1: 79.48	ma_all_f1: 76.68	mi_all_f1: 78.33	favor_f1: 74.94	against_f1: 82.31	none_f1: 72.8
+[2024-01-03 00:53:35,859][train.py][line:244][INFO] 95/161	train_loss: 1.0817438098601997	train_acc: 61.85
+[2024-01-03 00:53:57,276][train.py][line:247][INFO] Val: ma_f1: 78.37	acc: 77.42	avg_f1: 78.9	ma_all_f1: 76.41	mi_all_f1: 77.42	favor_f1: 76.06	against_f1: 80.67	none_f1: 72.5
+[2024-01-03 00:54:12,174][train.py][line:244][INFO] 127/161	train_loss: 1.0976374578895047	train_acc: 60.74
+[2024-01-03 00:54:33,566][train.py][line:247][INFO] Val: ma_f1: 75.82	acc: 76.4	avg_f1: 76.77	ma_all_f1: 74.8	mi_all_f1: 76.4	favor_f1: 71.36	against_f1: 80.27	none_f1: 72.76
+[2024-01-03 00:54:48,322][train.py][line:244][INFO] 159/161	train_loss: 1.102266086731106	train_acc: 60.82
+[2024-01-03 00:55:09,783][train.py][line:247][INFO] Val: ma_f1: 68.22	acc: 63.38	avg_f1: 66.73	ma_all_f1: 65.61	mi_all_f1: 63.38	favor_f1: 76.06	against_f1: 60.38	none_f1: 60.37
+[2024-01-03 00:55:10,217][train.py][line:206][INFO] epoch: 3
+[2024-01-03 00:55:25,091][train.py][line:244][INFO] 31/161	train_loss: 1.051533848978579	train_acc: 62.11
+[2024-01-03 00:55:46,582][train.py][line:247][INFO] Val: ma_f1: 59.34	acc: 53.92	avg_f1: 56.66	ma_all_f1: 57.51	mi_all_f1: 53.92	favor_f1: 76.06	against_f1: 42.62	none_f1: 53.85
+[2024-01-03 00:56:01,414][train.py][line:244][INFO] 63/161	train_loss: 1.0134584810584784	train_acc: 63.28
+[2024-01-03 00:56:22,870][train.py][line:247][INFO] Val: ma_f1: 77.63	acc: 72.63	avg_f1: 78.1	ma_all_f1: 67.72	mi_all_f1: 72.63	favor_f1: 75.86	against_f1: 79.4	none_f1: 47.89
+[2024-01-03 00:56:37,641][train.py][line:244][INFO] 95/161	train_loss: 1.1969653063764174	train_acc: 59.83
+[2024-01-03 00:56:59,106][train.py][line:247][INFO] Val: ma_f1: 76.15	acc: 66.63	avg_f1: 76.38	ma_all_f1: 50.77	mi_all_f1: 66.63	favor_f1: 75.32	against_f1: 76.98	none_f1: 0.0
+[2024-01-03 00:57:13,932][train.py][line:244][INFO] 127/161	train_loss: 1.2237309913616627	train_acc: 60.06
+[2024-01-03 00:57:35,343][train.py][line:247][INFO] Val: ma_f1: 38.98	acc: 68.87	avg_f1: 53.68	ma_all_f1: 49.43	mi_all_f1: 68.87	favor_f1: 1.23	against_f1: 76.74	none_f1: 70.33
+[2024-01-03 00:57:50,175][train.py][line:244][INFO] 159/161	train_loss: 1.2075898075476288	train_acc: 60.59
+[2024-01-03 00:58:11,654][train.py][line:247][INFO] Val: ma_f1: 79.02	acc: 78.43	avg_f1: 79.71	ma_all_f1: 77.15	mi_all_f1: 78.43	favor_f1: 76.06	against_f1: 81.97	none_f1: 73.42
+[2024-01-03 00:58:33,183][train.py][line:254][INFO] Test: ma_f1: 79.02	acc: 78.43	avg_f1: 79.71	ma_all_f1: 77.15	mi_all_f1: 78.43	favor_f1: 76.06	against_f1: 81.97	none_f1: 73.42
+[2024-01-03 00:58:33,627][train.py][line:206][INFO] epoch: 4
+[2024-01-03 00:58:48,449][train.py][line:244][INFO] 31/161	train_loss: 1.300281511619687	train_acc: 60.94
+[2024-01-03 00:59:09,974][train.py][line:247][INFO] Val: ma_f1: 62.61	acc: 57.17	avg_f1: 60.31	ma_all_f1: 60.4	mi_all_f1: 57.17	favor_f1: 76.06	against_f1: 49.15	none_f1: 56.0
+[2024-01-03 00:59:24,849][train.py][line:244][INFO] 63/161	train_loss: 1.2354823062196374	train_acc: 62.6
+[2024-01-03 00:59:46,310][train.py][line:247][INFO] Val: ma_f1: 59.12	acc: 72.43	avg_f1: 65.52	ma_all_f1: 63.98	mi_all_f1: 72.43	favor_f1: 40.36	against_f1: 77.87	none_f1: 73.7
+[2024-01-03 01:00:01,106][train.py][line:244][INFO] 95/161	train_loss: 1.2595388162881136	train_acc: 61.59
+[2024-01-03 01:00:22,554][train.py][line:247][INFO] Val: ma_f1: 74.26	acc: 65.31	avg_f1: 74.68	ma_all_f1: 49.51	mi_all_f1: 65.31	favor_f1: 72.68	against_f1: 75.85	none_f1: 0.0
+[2024-01-03 01:00:37,405][train.py][line:244][INFO] 127/161	train_loss: 1.2328514503315091	train_acc: 61.47
+[2024-01-03 01:00:58,964][train.py][line:247][INFO] Val: ma_f1: 78.71	acc: 78.03	avg_f1: 79.33	ma_all_f1: 76.9	mi_all_f1: 78.03	favor_f1: 76.06	against_f1: 81.37	none_f1: 73.27
+[2024-01-03 01:01:13,812][train.py][line:244][INFO] 159/161	train_loss: 1.227568880096078	train_acc: 61.09
+[2024-01-03 01:01:35,323][train.py][line:247][INFO] Val: ma_f1: 73.48	acc: 70.3	avg_f1: 73.02	ma_all_f1: 70.94	mi_all_f1: 70.3	favor_f1: 75.66	against_f1: 71.29	none_f1: 65.86
+[2024-01-03 01:01:35,769][train.py][line:206][INFO] epoch: 5
+[2024-01-03 01:01:50,600][train.py][line:244][INFO] 31/161	train_loss: 1.284857909195125	train_acc: 55.66
+[2024-01-03 01:02:12,038][train.py][line:247][INFO] Val: ma_f1: 78.88	acc: 78.43	avg_f1: 79.62	ma_all_f1: 77.09	mi_all_f1: 78.43	favor_f1: 75.66	against_f1: 82.09	none_f1: 73.51
+[2024-01-03 01:02:26,972][train.py][line:244][INFO] 63/161	train_loss: 1.2976014078594744	train_acc: 58.11
+[2024-01-03 01:02:48,475][train.py][line:247][INFO] Val: ma_f1: 73.48	acc: 70.09	avg_f1: 72.89	ma_all_f1: 70.98	mi_all_f1: 70.09	favor_f1: 76.39	against_f1: 70.58	none_f1: 65.99
+[2024-01-03 01:03:03,257][train.py][line:244][INFO] 95/161	train_loss: 1.2876856876537204	train_acc: 58.72
+[2024-01-03 01:03:24,708][train.py][line:247][INFO] Val: ma_f1: 43.68	acc: 69.68	avg_f1: 56.38	ma_all_f1: 52.93	mi_all_f1: 69.68	favor_f1: 10.4	against_f1: 76.96	none_f1: 71.43
+[2024-01-03 01:03:39,538][train.py][line:244][INFO] 127/161	train_loss: 1.281158892204985	train_acc: 59.42
+[2024-01-03 01:04:01,044][train.py][line:247][INFO] Val: ma_f1: 79.11	acc: 79.04	avg_f1: 79.93	ma_all_f1: 77.57	mi_all_f1: 79.04	favor_f1: 75.59	against_f1: 82.63	none_f1: 74.49
+[2024-01-03 01:04:22,585][train.py][line:254][INFO] Test: ma_f1: 79.11	acc: 79.04	avg_f1: 79.93	ma_all_f1: 77.57	mi_all_f1: 79.04	favor_f1: 75.59	against_f1: 82.63	none_f1: 74.49
+[2024-01-03 01:04:37,418][train.py][line:244][INFO] 159/161	train_loss: 1.2362623250111937	train_acc: 60.23
+[2024-01-03 01:04:58,899][train.py][line:247][INFO] Val: ma_f1: 79.15	acc: 78.74	avg_f1: 79.92	ma_all_f1: 77.23	mi_all_f1: 78.74	favor_f1: 75.94	against_f1: 82.36	none_f1: 73.38
+[2024-01-03 01:05:20,470][train.py][line:254][INFO] Test: ma_f1: 79.15	acc: 78.74	avg_f1: 79.92	ma_all_f1: 77.23	mi_all_f1: 78.74	favor_f1: 75.94	against_f1: 82.36	none_f1: 73.38
+[2024-01-03 01:05:20,901][train.py][line:206][INFO] epoch: 6
+[2024-01-03 01:05:35,792][train.py][line:244][INFO] 31/161	train_loss: 1.1745694763958454	train_acc: 62.11
+[2024-01-03 01:05:57,217][train.py][line:247][INFO] Val: ma_f1: 38.05	acc: 63.48	avg_f1: 52.65	ma_all_f1: 41.19	mi_all_f1: 63.48	favor_f1: 1.21	against_f1: 74.89	none_f1: 47.47
+[2024-01-03 01:06:12,104][train.py][line:244][INFO] 63/161	train_loss: 1.1565628359094262	train_acc: 61.23
+[2024-01-03 01:06:33,604][train.py][line:247][INFO] Val: ma_f1: 37.14	acc: 57.58	avg_f1: 51.67	ma_all_f1: 24.76	mi_all_f1: 57.58	favor_f1: 1.23	against_f1: 73.04	none_f1: 0.0
+[2024-01-03 01:06:48,438][train.py][line:244][INFO] 95/161	train_loss: 1.2205839001884062	train_acc: 60.81
+[2024-01-03 01:07:09,907][train.py][line:247][INFO] Val: ma_f1: 65.27	acc: 60.33	avg_f1: 63.47	ma_all_f1: 62.96	mi_all_f1: 60.33	favor_f1: 75.33	against_f1: 55.21	none_f1: 58.33
+[2024-01-03 01:07:24,792][train.py][line:244][INFO] 127/161	train_loss: 1.2065984294749796	train_acc: 61.62
+[2024-01-03 01:07:46,319][train.py][line:247][INFO] Val: ma_f1: 55.84	acc: 60.83	avg_f1: 62.61	ma_all_f1: 39.69	mi_all_f1: 60.83	favor_f1: 37.61	against_f1: 74.07	none_f1: 7.38
+[2024-01-03 01:08:01,075][train.py][line:244][INFO] 159/161	train_loss: 1.2502982795238495	train_acc: 61.48
+[2024-01-03 01:08:22,505][train.py][line:247][INFO] Val: ma_f1: 79.17	acc: 78.64	avg_f1: 79.92	ma_all_f1: 77.1	mi_all_f1: 78.64	favor_f1: 76.06	against_f1: 82.28	none_f1: 72.97
+[2024-01-03 01:08:44,046][train.py][line:254][INFO] Test: ma_f1: 79.17	acc: 78.64	avg_f1: 79.92	ma_all_f1: 77.1	mi_all_f1: 78.64	favor_f1: 76.06	against_f1: 82.28	none_f1: 72.97
+[2024-01-03 01:08:44,484][train.py][line:206][INFO] epoch: 7
+[2024-01-03 01:08:59,268][train.py][line:244][INFO] 31/161	train_loss: 1.2965955222025514	train_acc: 63.09
+[2024-01-03 01:09:20,763][train.py][line:247][INFO] Val: ma_f1: 77.49	acc: 77.21	avg_f1: 78.19	ma_all_f1: 76.01	mi_all_f1: 77.21	favor_f1: 74.3	against_f1: 80.67	none_f1: 73.05
+[2024-01-03 01:09:35,557][train.py][line:244][INFO] 63/161	train_loss: 1.1269281120039523	train_acc: 64.36
+[2024-01-03 01:09:57,048][train.py][line:247][INFO] Val: ma_f1: 72.71	acc: 73.04	avg_f1: 73.7	ma_all_f1: 71.63	mi_all_f1: 73.04	favor_f1: 68.97	against_f1: 76.46	none_f1: 69.47
+[2024-01-03 01:10:11,869][train.py][line:244][INFO] 95/161	train_loss: 1.171235969911019	train_acc: 63.61
+[2024-01-03 01:10:33,385][train.py][line:247][INFO] Val: ma_f1: 51.86	acc: 47.91	avg_f1: 48.63	ma_all_f1: 51.5	mi_all_f1: 47.91	favor_f1: 74.05	against_f1: 29.67	none_f1: 50.76
+[2024-01-03 01:10:48,297][train.py][line:244][INFO] 127/161	train_loss: 1.1791464174166322	train_acc: 63.72
+[2024-01-03 01:11:09,810][train.py][line:247][INFO] Val: ma_f1: 37.49	acc: 65.51	avg_f1: 50.64	ma_all_f1: 48.01	mi_all_f1: 65.51	favor_f1: 2.42	against_f1: 72.55	none_f1: 69.04
+[2024-01-03 01:11:24,737][train.py][line:244][INFO] 159/161	train_loss: 1.19805803373456	train_acc: 62.89
+[2024-01-03 01:11:46,217][train.py][line:247][INFO] Val: ma_f1: 36.46	acc: 48.42	avg_f1: 41.39	ma_all_f1: 41.14	mi_all_f1: 48.42	favor_f1: 20.65	against_f1: 52.26	none_f1: 50.51
+[2024-01-03 01:11:46,654][train.py][line:206][INFO] epoch: 8
+[2024-01-03 01:12:01,507][train.py][line:244][INFO] 31/161	train_loss: 0.9954276578500867	train_acc: 68.36
+[2024-01-03 01:12:22,966][train.py][line:247][INFO] Val: ma_f1: 73.52	acc: 71.21	avg_f1: 73.38	ma_all_f1: 71.37	mi_all_f1: 71.21	favor_f1: 74.15	against_f1: 72.88	none_f1: 67.08
+[2024-01-03 01:12:37,802][train.py][line:244][INFO] 63/161	train_loss: 0.9025378450751305	train_acc: 68.36
+[2024-01-03 01:12:59,273][train.py][line:247][INFO] Val: ma_f1: 66.57	acc: 67.65	avg_f1: 68.2	ma_all_f1: 65.63	mi_all_f1: 67.65	favor_f1: 60.4	against_f1: 72.75	none_f1: 63.73
+[2024-01-03 01:13:14,029][train.py][line:244][INFO] 95/161	train_loss: 0.9068872025236487	train_acc: 68.1
+[2024-01-03 01:13:35,603][train.py][line:247][INFO] Val: ma_f1: 66.45	acc: 61.85	avg_f1: 65.02	ma_all_f1: 64.04	mi_all_f1: 61.85	favor_f1: 74.05	against_f1: 58.85	none_f1: 59.2
+[2024-01-03 01:13:50,484][train.py][line:244][INFO] 127/161	train_loss: 0.9565539055038244	train_acc: 66.85
+[2024-01-03 01:14:12,006][train.py][line:247][INFO] Val: ma_f1: 69.8	acc: 70.6	avg_f1: 70.25	ma_all_f1: 69.99	mi_all_f1: 70.6	favor_f1: 67.27	against_f1: 72.34	none_f1: 70.37
+[2024-01-03 01:14:26,844][train.py][line:244][INFO] 159/161	train_loss: 0.9723424134775996	train_acc: 66.72
+[2024-01-03 01:14:48,334][train.py][line:247][INFO] Val: ma_f1: 65.92	acc: 64.29	avg_f1: 65.99	ma_all_f1: 64.41	mi_all_f1: 64.29	favor_f1: 65.62	against_f1: 66.22	none_f1: 61.39
+[2024-01-03 01:14:48,764][train.py][line:206][INFO] epoch: 9
+[2024-01-03 01:15:03,590][train.py][line:244][INFO] 31/161	train_loss: 1.0885673053562641	train_acc: 63.09
+[2024-01-03 01:15:25,027][train.py][line:247][INFO] Val: ma_f1: 47.71	acc: 67.55	avg_f1: 57.0	ma_all_f1: 55.3	mi_all_f1: 67.55	favor_f1: 21.99	against_f1: 73.43	none_f1: 70.49
+[2024-01-03 01:15:39,917][train.py][line:244][INFO] 63/161	train_loss: 1.0005410904996097	train_acc: 64.84
+[2024-01-03 01:16:01,418][train.py][line:247][INFO] Val: ma_f1: 38.62	acc: 68.26	avg_f1: 53.12	ma_all_f1: 49.1	mi_all_f1: 68.26	favor_f1: 1.23	against_f1: 76.01	none_f1: 70.06
+[2024-01-03 01:16:16,165][train.py][line:244][INFO] 95/161	train_loss: 0.9398613569016258	train_acc: 67.25
+[2024-01-03 01:16:37,682][train.py][line:247][INFO] Val: ma_f1: 77.98	acc: 77.42	avg_f1: 78.86	ma_all_f1: 75.65	mi_all_f1: 77.42	favor_f1: 74.57	against_f1: 81.39	none_f1: 70.99
+[2024-01-03 01:16:52,589][train.py][line:244][INFO] 127/161	train_loss: 1.007477700477466	train_acc: 64.94
+[2024-01-03 01:17:14,092][train.py][line:247][INFO] Val: ma_f1: 60.19	acc: 63.28	avg_f1: 60.83	ma_all_f1: 63.03	mi_all_f1: 63.28	favor_f1: 54.45	against_f1: 65.93	none_f1: 68.71
+[2024-01-03 01:17:28,831][train.py][line:244][INFO] 159/161	train_loss: 0.9740271493792534	train_acc: 65.78
+[2024-01-03 01:17:50,272][train.py][line:247][INFO] Val: ma_f1: 71.91	acc: 70.6	avg_f1: 71.88	ma_all_f1: 70.61	mi_all_f1: 70.6	favor_f1: 72.06	against_f1: 71.76	none_f1: 68.02
+[2024-01-03 01:17:50,716][train.py][line:206][INFO] epoch: 10
+[2024-01-03 01:18:05,534][train.py][line:244][INFO] 31/161	train_loss: 0.8070384729653597	train_acc: 67.77
+[2024-01-03 01:18:27,014][train.py][line:247][INFO] Val: ma_f1: 75.22	acc: 76.2	avg_f1: 76.73	ma_all_f1: 73.65	mi_all_f1: 76.2	favor_f1: 69.72	against_f1: 80.71	none_f1: 70.52
+[2024-01-03 01:18:41,842][train.py][line:244][INFO] 63/161	train_loss: 0.8862425973638892	train_acc: 66.89
+[2024-01-03 01:19:03,322][train.py][line:247][INFO] Val: ma_f1: 74.85	acc: 66.33	avg_f1: 75.46	ma_all_f1: 51.16	mi_all_f1: 66.33	favor_f1: 72.78	against_f1: 76.92	none_f1: 3.77
+[2024-01-03 01:19:18,204][train.py][line:244][INFO] 95/161	train_loss: 0.9484413266181946	train_acc: 66.8
+[2024-01-03 01:19:39,672][train.py][line:247][INFO] Val: ma_f1: 50.92	acc: 56.05	avg_f1: 50.76	ma_all_f1: 56.48	mi_all_f1: 56.05	favor_f1: 53.36	against_f1: 48.48	none_f1: 67.62
+[2024-01-03 01:19:54,402][train.py][line:244][INFO] 127/161	train_loss: 1.0287219365127385	train_acc: 65.77
+[2024-01-03 01:20:15,897][train.py][line:247][INFO] Val: ma_f1: 77.94	acc: 78.03	avg_f1: 78.87	ma_all_f1: 76.47	mi_all_f1: 78.03	favor_f1: 74.22	against_f1: 81.66	none_f1: 73.51
+[2024-01-03 01:20:30,783][train.py][line:244][INFO] 159/161	train_loss: 1.0284224750474096	train_acc: 65.74
+[2024-01-03 01:20:52,339][train.py][line:247][INFO] Val: ma_f1: 76.97	acc: 76.4	avg_f1: 77.52	ma_all_f1: 75.48	mi_all_f1: 76.4	favor_f1: 74.66	against_f1: 79.29	none_f1: 72.48
+[2024-01-03 01:20:52,770][train.py][line:206][INFO] epoch: 11
+[2024-01-03 01:21:07,496][train.py][line:244][INFO] 31/161	train_loss: 0.9136387929320335	train_acc: 69.34
+[2024-01-03 01:21:28,923][train.py][line:247][INFO] Val: ma_f1: 44.4	acc: 48.22	avg_f1: 45.26	ma_all_f1: 46.39	mi_all_f1: 48.22	favor_f1: 41.23	against_f1: 47.58	none_f1: 50.36
+[2024-01-03 01:21:43,759][train.py][line:244][INFO] 63/161	train_loss: 0.9084148947149515	train_acc: 69.73
+[2024-01-03 01:22:05,212][train.py][line:247][INFO] Val: ma_f1: 68.48	acc: 64.7	avg_f1: 67.71	ma_all_f1: 65.99	mi_all_f1: 64.7	favor_f1: 72.05	against_f1: 64.91	none_f1: 61.02
+[2024-01-03 01:22:20,020][train.py][line:244][INFO] 95/161	train_loss: 1.0288056748298307	train_acc: 66.86
+[2024-01-03 01:22:41,482][train.py][line:247][INFO] Val: ma_f1: 50.67	acc: 55.14	avg_f1: 50.34	ma_all_f1: 55.57	mi_all_f1: 55.14	favor_f1: 55.36	against_f1: 45.99	none_f1: 65.35
+[2024-01-03 01:22:56,328][train.py][line:244][INFO] 127/161	train_loss: 1.085820228792727	train_acc: 66.7
+[2024-01-03 01:23:17,761][train.py][line:247][INFO] Val: ma_f1: 72.58	acc: 69.89	avg_f1: 72.24	ma_all_f1: 70.41	mi_all_f1: 69.89	favor_f1: 74.19	against_f1: 70.96	none_f1: 66.08
+[2024-01-03 01:23:32,575][train.py][line:244][INFO] 159/161	train_loss: 1.0465940938331186	train_acc: 67.58
+[2024-01-03 01:23:54,067][train.py][line:247][INFO] Val: ma_f1: 78.4	acc: 77.52	avg_f1: 79.16	ma_all_f1: 75.86	mi_all_f1: 77.52	favor_f1: 75.27	against_f1: 81.52	none_f1: 70.79
+[2024-01-03 01:23:54,516][train.py][line:263][INFO] Best_test: epoch:6	ma_f1: 79.17	acc: 78.64	avg_f1: 79.92	ma_all_f1: 77.1	mi_all_f1: 78.64	favor_f1: 76.06	against_f1: 82.28	none_f1: 72.97
+[2024-01-03 01:23:54,516][train.py][line:265][INFO] Best_val: epoch:6	ma_f1: 79.17	acc: 78.64	avg_f1: 79.92	ma_all_f1: 77.1	mi_all_f1: 78.64	favor_f1: 76.06	against_f1: 82.28	none_f1: 72.97

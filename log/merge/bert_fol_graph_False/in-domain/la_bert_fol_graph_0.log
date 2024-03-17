@@ -1,0 +1,33 @@
+[2024-01-17 21:46:52,395][train.py][line:151][INFO] cuda memory allocated: 457956352
+[2024-01-17 21:46:52,401][train.py][line:166][INFO] > n_trainable_params: 114203199, n_nontrainable_params: 0
+[2024-01-17 21:46:52,401][train.py][line:167][INFO] > training arguments:
+[2024-01-17 21:46:52,401][train.py][line:169][INFO] >>> model_name: bert_fol_graph
+[2024-01-17 21:46:52,401][train.py][line:169][INFO] >>> dataset: la
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> optimizer: <class 'transformers.optimization.AdamW'>
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> initializer: <function xavier_uniform_ at 0x7f38eea504c0>
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> lr: 0.001
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> bert_lr: 5e-06
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> dropout: 0.2
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> num_epoch: 20
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> batch_size: 16
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> log_step: -1
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> pretrained_model_name: bert-base-uncased
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> max_seq_len: 60
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> polarities_dim: 3
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> patience: 5
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> device: cuda:0
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> save_model: False
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> seed: 0
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> valset_ratio: 0.0
+[2024-01-17 21:46:52,402][train.py][line:169][INFO] >>> embed_dim: 300
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> hidden_dim: 300
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> pid: 1
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> tid: 1
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> lid: 0
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> llambda: 0.5
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> use_prompt: True
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> with_text: False
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> model_class: <class 'models.bert_fol_text_graph.BERT_FOL_G'>
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> dataset_file: {'train': '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/la/train.csv', 'test': '/home/dingdaijun/data_list/dingdaijun/LTN_merge/datasets/merge/la/test.csv'}
+[2024-01-17 21:46:52,403][train.py][line:169][INFO] >>> inputs_cols: ['bert_fol_inputs', 'bert_fol_type', 'bert_fol_mask', 'bert_text_inputs', 'bert_text_type', 'bert_text_mask', 'mlm_labels', 'graph_matrix', 'graph_text']
+[2024-01-17 21:46:52,417][train.py][line:205][INFO] epoch: 0

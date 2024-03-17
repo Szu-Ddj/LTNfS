@@ -1,0 +1,13 @@
+[2024-01-18 20:56:38,523][train.py][line:263][INFO] Best_test: epoch:2	ma_f1: 71.78	acc: 77.47	avg_f1: 71.77	ma_all_f1: 77.5	mi_all_f1: 77.47	favor_f1: 70.75	against_f1: 72.8	none_f1: 88.96
+[2024-01-18 23:59:07,825][train.py][line:263][INFO] Best_test: epoch:7	ma_f1: 73.06	acc: 78.36	avg_f1: 73.23	ma_all_f1: 78.12	mi_all_f1: 78.36	favor_f1: 70.74	against_f1: 75.38	none_f1: 88.23
+[2024-01-19 00:11:37,163][train.py][line:263][INFO] Best_test: epoch:17	ma_f1: 73.23	acc: 78.22	avg_f1: 73.22	ma_all_f1: 78.22	mi_all_f1: 78.22	favor_f1: 72.64	against_f1: 73.83	none_f1: 88.21
+[2024-01-19 00:17:23,739][train.py][line:263][INFO] Best_test: epoch:2	ma_f1: 73.09	acc: 78.08	avg_f1: 73.12	ma_all_f1: 78.06	mi_all_f1: 78.08	favor_f1: 70.97	against_f1: 75.2	none_f1: 88.02
+[2024-01-19 09:23:05,545][train.py][line:263][INFO] Best_test: epoch:4	ma_f1: 73.95	acc: 79.32	avg_f1: 73.98	ma_all_f1: 79.02	mi_all_f1: 79.32	favor_f1: 72.47	against_f1: 75.43	none_f1: 89.15
+[2024-01-19 09:36:11,788][train.py][line:263][INFO] Best_test: epoch:6	ma_f1: 70.53	acc: 76.92	avg_f1: 70.54	ma_all_f1: 76.59	mi_all_f1: 76.92	favor_f1: 70.98	against_f1: 70.09	none_f1: 88.69
+[2024-01-19 09:53:49,942][train.py][line:263][INFO] Best_test: epoch:3	ma_f1: 73.62	acc: 78.9	avg_f1: 73.62	ma_all_f1: 78.6	mi_all_f1: 78.9	favor_f1: 73.57	against_f1: 73.67	none_f1: 88.57
+[2024-01-19 10:16:18,798][train.py][line:263][INFO] Best_test: epoch:5	ma_f1: 72.76	acc: 79.04	avg_f1: 72.81	ma_all_f1: 78.72	mi_all_f1: 79.04	favor_f1: 71.16	against_f1: 74.36	none_f1: 90.64
+[2024-01-19 10:38:37,044][train.py][line:263][INFO] Best_test: epoch:6	ma_f1: 72.39	acc: 77.74	avg_f1: 72.4	ma_all_f1: 77.77	mi_all_f1: 77.74	favor_f1: 72.07	against_f1: 72.71	none_f1: 88.52
+[2024-01-19 10:45:01,870][train.py][line:263][INFO] Best_test: epoch:3	ma_f1: 74.7	acc: 80.27	avg_f1: 74.73	ma_all_f1: 80.07	mi_all_f1: 80.27	favor_f1: 73.43	against_f1: 75.96	none_f1: 90.82
+[2024-03-16 16:41:28,345][train.py][line:264][INFO] Best_test: epoch:6	ma_f1: 71.81	acc: 78.01	avg_f1: 71.95	ma_all_f1: 77.59	mi_all_f1: 78.01	favor_f1: 68.83	against_f1: 74.78	none_f1: 89.15
+[2024-03-16 17:03:21,891][train.py][line:264][INFO] Best_test: epoch:3	ma_f1: 71.6	acc: 78.08	avg_f1: 71.77	ma_all_f1: 77.64	mi_all_f1: 78.08	favor_f1: 68.81	against_f1: 74.39	none_f1: 89.7
+[2024-03-16 17:19:05,032][train.py][line:264][INFO] Best_test: epoch:3	ma_f1: 74.05	acc: 79.86	avg_f1: 74.09	ma_all_f1: 79.62	mi_all_f1: 79.86	favor_f1: 72.55	against_f1: 75.55	none_f1: 90.76
